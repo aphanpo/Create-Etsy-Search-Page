@@ -1,0 +1,159 @@
+html {box-sizing:border-box;}
+*,*::before,*::after {box-sizing:inherit}
+
+.container {
+    width: 1300px;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom: #ccc solid 1px;
+    
+}
+
+.top {
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+   
+}
+
+.top > p {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+    align-items: center;
+}
+
+.searching {
+    width: 900px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.searching::placeholder {
+    font-size: 18px;
+    color: black;
+    align-items: center;
+}
+
+.etsy img {
+    width: 70px; 
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    display: relative;
+}
+
+.glogo {
+    display: flex;
+    font-size: 20px;
+    justify-content: flex-end;
+    
+}
+
+.glogo > div {
+    display: absolute;
+    width: 20px;
+    height: 20px;
+    right: 200px;
+
+}
+
+.top > button{
+    width: 60px;
+    height: 35px;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.nav p:hover {
+    text-decoration: underline;
+}
+
+.similar {
+    display: flex; 
+    margin: 10px 0;
+}
+
+.similar p {
+    background: #FAA077;
+    border-radius: 50px;
+    width: 200px;
+    padding: 5px 1px;
+    margin: 5px 2px;
+    text-align: center;
+    justify-content: center;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+aside {
+    
+}
+
+.maincats > p {
+    text-indent: 20px;
+    line-height: 5px;
+}
+
+.location {
+    width: 140px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.location::placeholder {
+    font-size: 12px;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.products {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.products h4 {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.products img {
+    width: 100%;
+
+}
+
+.products p {
+    margin: 0;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
